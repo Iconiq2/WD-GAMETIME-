@@ -47,7 +47,7 @@ body
     border-radius: 50%;
     overflow: hidden;
 }
-.profileText .imgBx img.png
+.profileText .imgBx 
     position: absolute;
     top: 0;
     Left: 0;
