@@ -3,92 +3,91 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header Styles */
+/* Header Section */
 header {
-    background-color: #333;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-.logo {
-    font-size: 1.5rem;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-nav ul {
-    display: flex;
+header nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav li {
-    margin: 0 10px;
+header nav ul li {
+    display: inline;
 }
 
-nav a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-/* Hero Section Styles */
+/* Hero Section */
 .hero {
-    background-color: #f4f4f4;
+    background: url('assets/img/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
     text-align: center;
-    padding: 50px 0;
 }
 
-.hero-content {
-    max-width: 600px;
-    margin: 0 auto;
+.hero-content h1 {
+    font-size: 36px; /* Adjust as needed */
 }
 
-/* Services Section Styles */
+/* Services Section */
 .services {
-    display: flex;
-    justify-content: space-around;
     padding: 50px 0;
+    text-align: center;
 }
 
 .service {
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Gallery Section Styles */
+/* Gallery Section */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
 }
 
 .gallery-item img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
-/* Testimonials Section Styles */
+/* Testimonials Section */
 .testimonials {
-    background-color: #f4f4f4;
-    text-align: center;
     padding: 50px 0;
+    text-align: center;
 }
 
 blockquote {
     font-style: italic;
 }
 
-/* Team Section Styles */
+/* Team Section */
 .team {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 50px 0;
 }
 
@@ -96,16 +95,15 @@ blockquote {
     text-align: center;
 }
 
-team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+.team-member img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Footer Section Styles */
+/* Footer Section */
 footer {
     background-color: #333;
     color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
 }
