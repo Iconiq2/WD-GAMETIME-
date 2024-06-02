@@ -1,42 +1,56 @@
-*{
-font-family: Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.header  {
-    width: 100%;
-}
-
-.sections {
-    display: flex;
-    justify-content: space-around;
-}
-
-.section {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.content {
+header {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-.content-item {
-    text-align: center;
-    width: 45%;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.images {
+header nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    gap: 20px;
 }
 
-.images img {
-    margin: 10px;
+header nav ul li {
+    display: inline;
 }
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
