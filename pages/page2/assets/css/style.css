@@ -1,56 +1,111 @@
-.body {
+/* General Styles */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.header {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+    padding: 10px;
 }
 
-.header .logo {
-    font-size: 24px;
-    font-weight: bold;
+.logo {
+    font-size: 1.5rem;
 }
 
-.header nav ul {
-    list-style: none;
+nav ul {
     display: flex;
-    gap: 20px;
+    list-style: none;
 }
 
-.header nav ul li {
-    display: inline;
+nav li {
+    margin: 0 10px;
 }
 
-.header nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
 }
 
-/* Hero Section */
+/* Hero Section Styles */
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services Section Styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.service {
     text-align: center;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+/* Gallery Section Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
 }
 
-.hero-content p {
-    font-size: 24px;
+.gallery-item img {
+    width: 100%;
+    height: auto;
 }
 
-/* Services Section */
-.services {
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+/* Team Section Styles */
+.team {
     display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.team-member {
+    text-align: center;
+}
+
+team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
