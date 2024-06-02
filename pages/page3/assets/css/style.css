@@ -34,7 +34,7 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Hero Section */
+
 .hero {
     background: url('hero.jpg') no-repeat center center/cover;
     color: #fff;
@@ -51,6 +51,6 @@ header nav ul li a {
     font-size: 24px;
 }
 
-/* Services Section */
+
 .services {
     display: flex;
