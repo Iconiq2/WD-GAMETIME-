@@ -34,23 +34,13 @@ header nav ul li a {
     text-decoration: none;
 }
 
-
+/* Hero Section */
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
+    background: url('assets/img/hero.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 20px;
     text-align: center;
 }
 
 .hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 24px;
-}
-
-
-.services {
-    display: flex;
+    font-size:
