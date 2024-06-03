@@ -2,12 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Header section */
 header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-    background: #f4f4f4;
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .navbar {
@@ -35,11 +38,11 @@ header {
 
 .navbar nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 .header-content {
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .header-content h1 {
@@ -47,11 +50,16 @@ header {
     margin: 10px 0;
 }
 
+.header-content p {
+    font-size: 18px;
+}
+
+/* Steps section */
 .steps {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background: #eaeaea;
+    padding: 40px 20px;
+    background: #f4f4f4;
 }
 
 .steps .step {
@@ -68,21 +76,90 @@ header {
     color: #ff6600;
 }
 
+.steps .step h2 {
+    margin: 10px 0;
+}
+
+/* Quotes section */
 .quotes {
     padding: 40px 20px;
     text-align: center;
-    background: #f4f4f4;
+    background: #eaeaea;
 }
 
 .quotes blockquote {
+    font-size: 24px;
     font-style: italic;
     color: #555;
 }
 
+.quotes cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Team section */
 .team {
     padding: 40px 20px;
     background: #fff;
+    text-align: center;
 }
 
 .team h2 {
-    text-align:
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.team .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team .team-member {
+    width: 200px;
+    text-align: center;
+}
+
+.team .team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team .team-member h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.team .team-member p {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Footer section */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .contact {
+    margin-bottom: 20px;
+}
+
+footer .contact h2 {
+    font-size: 24px;
+}
+
+footer .contact p {
+    margin: 5px 0;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+}
